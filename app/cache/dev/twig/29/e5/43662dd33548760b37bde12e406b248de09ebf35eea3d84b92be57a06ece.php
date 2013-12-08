@@ -68,14 +68,11 @@ class __TwigTemplate_29e543662dd33548760b37bde12e406b248de09ebf35eea3d84b92be57a
         echo "        </div>
       </div>
       <hr>
-      <footer>
-          <div id=\"footer\" class=\"hero-unit\"><p>Responsable du site : pierrot.</p></div>
-      </footer>
     </div>
   ";
-        // line 39
+        // line 36
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 44
+        // line 41
         echo "  </body>
 </html>";
     }
@@ -103,15 +100,15 @@ class __TwigTemplate_29e543662dd33548760b37bde12e406b248de09ebf35eea3d84b92be57a
         echo "          ";
     }
 
-    // line 39
+    // line 36
     public function block_javascripts($context, array $blocks = array())
     {
-        // line 40
+        // line 37
         echo "    ";
-        // line 41
+        // line 38
         echo "    <script src=\"//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js\"></script>
     <script type=\"text/javascript\" src=\"";
-        // line 42
+        // line 39
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("js/bootstrap.js"), "html", null, true);
         echo "\"></script>
   ";
@@ -129,6 +126,6 @@ class __TwigTemplate_29e543662dd33548760b37bde12e406b248de09ebf35eea3d84b92be57a
 
     public function getDebugInfo()
     {
-        return array (  115 => 42,  112 => 41,  110 => 40,  107 => 39,  103 => 31,  100 => 30,  93 => 8,  90 => 7,  84 => 6,  79 => 44,  77 => 39,  68 => 32,  66 => 30,  60 => 27,  54 => 24,  50 => 23,  35 => 10,  33 => 7,  29 => 6,  23 => 2,);
+        return array (  112 => 39,  109 => 38,  107 => 37,  104 => 36,  100 => 31,  97 => 30,  90 => 8,  87 => 7,  81 => 6,  76 => 41,  74 => 36,  68 => 32,  66 => 30,  60 => 27,  54 => 24,  50 => 23,  35 => 10,  33 => 7,  29 => 6,  23 => 2,);
     }
 }

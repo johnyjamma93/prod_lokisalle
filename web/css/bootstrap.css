@@ -2329,6 +2329,7 @@ table th[class*="span"],
 
 .icon-heart {
   background-position: -96px 0;
+  font-size-adjust: 30px;
 }
 
 .icon-star {
