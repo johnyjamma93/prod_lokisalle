@@ -1,4 +1,0 @@
-twig:
-    # …
-    globals:
-        webmaster:  %app_webmaster%

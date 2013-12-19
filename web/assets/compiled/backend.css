@@ -1,0 +1,798 @@
+/* General. */
+body {
+    color: #5a5a5a;
+    font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+/* Links. */
+a {
+    color: #10AC8E;
+}
+a:hover {
+    color: #017E5D;
+}
+
+/* Signin. */
+body.signin {
+    padding-top: 200px;
+    background-color: #333;
+}
+img.swan {
+    position: absolute;
+    z-index: -1000;
+    margin-left: 350px;
+    margin-top: -50px;
+    height: 300px;
+}
+form.form-signin {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -150px 0 0 -200px;
+    padding: 40px;
+    background-color: #fff;
+    width: 400px;
+    height: 300px;
+    border-radius: 3px;
+}
+form.form-signin label {
+    font-weight: normal;
+}
+form.form-signin .form-control:focus {
+    border-color: #1abb9c;
+}
+
+/* Buttons. */
+.btn {
+    text-transform: uppercase;
+    border-radius: 3px;
+}
+.btn:not(.btn-lg):not(.btn-sm):not(.btn-xs) {
+    line-height: 20px;
+    font-size: 13px;
+}
+.btn > i {
+    margin-right: 5px;
+}
+.btn.btn-default {
+    border-color: #DDD;
+    background: #F5F5F5;
+}
+.btn.btn-default:hover {
+    border-color: #CCC;
+    background: #EEE;
+}
+
+/* Labels. */
+.label-success {
+    background-color: #1abb9c;
+}
+
+/* Navbar. */
+.navbar-collapse {
+    border: none;
+}
+.navbar-brand {
+    padding: 0;
+}
+.navbar-brand img {
+    height: 30px;
+    margin: 10px 15px 10px 10px;
+}
+.navbar-brand span {
+    color: #333;
+    font-size: 15px;
+    float: right;
+    margin-top: 13px;
+}
+.navbar-brand:hover span {
+    color: #fff;
+}
+.navbar-inverse {
+    border: 0;
+    background-color: #333;
+}
+.navbar-inverse .navbar-nav > li.active > a {
+    background-color: #1abb9c;
+    color: #fff;
+}
+.navbar-inverse .navbar-nav > .active.dropdown > a .caret {
+    border-bottom-color: #fff;
+    border-top-color: #fff;
+}
+.navbar-inverse .dropdown-menu {
+    border: 0;
+    box-shadow: none;
+    border-radius: 0;
+    background-color: #333;
+}
+.navbar-inverse .dropdown-menu li > a:hover {
+    background-color: #1abb9c;
+    color: #fff;
+}
+.navbar-inverse .dropdown-menu li > a {
+    padding: 10px 20px;
+    color: #fff;
+}
+.dropdown-menu {
+    box-shadow: none;
+    border-radius: 0;
+    border: 1px solid #f1f1f1;
+}
+.dropdown-menu li > a:hover {
+    background-color: #1abb9c;
+    color: #fff;
+}
+
+/* Grid and tables. */
+.table tbody > tr.sub-table > td {
+    padding-top: 0;
+    border-top: 0;
+}
+
+.variant-table-toggle {
+    text-align: center;
+}
+
+.variant-table-toggle i {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.row-split {
+    border-right: 1px solid #eee;
+}
+
+.grid-tabs {
+    margin-bottom: 10px;
+}
+
+/* Table. */
+.table {
+    background: #FAFAFA;
+}
+.table.table-bordered {
+    border-color: #EAEAEA;
+}
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+    border-color: #EEE;
+}
+.table > thead > tr > th {
+    vertical-align: middle;
+    border-bottom-width: 1px;
+    border-color: #EAEAEA;
+    background-color: #f1f1f1;
+    text-transform: uppercase;
+}
+.table > thead > tr > th a:link {
+    color: #5a5a5a;
+}
+.table > thead > tr > th a:visited {
+    color: #5a5a5a;
+}
+
+/* Pagination. */
+.pagination {
+    margin: 0 0 15px 0;
+    border-radius: 0;
+}
+.pagination > li > a {
+    border-color: #EEE;
+    border-width: 1px;
+    background: #FAFAFA;
+}
+.pagination > li > a:hover {
+    background: #FFF;
+}
+.pagination > li.disabled > a,
+.pagination > li.disabled > a:hover {
+    background: #FAFAFA;
+    border-color: #EEE;
+    color: #CCC;
+}
+.pagination > li.active > a,
+.pagination > li.active > a:hover {
+    background: #1ABB9C;
+    border-color: #37A37E;
+}
+.pagination > li:first-child > a,
+.pagination > li:first-child > span {
+    border-bottom-left-radius: 2px;
+    border-top-left-radius: 2px;
+}
+.pagination > li:last-child > a,
+.pagination > li:last-child > span {
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+}
+
+/* Main layout. */
+#content {
+    padding-right: 15px;
+}
+#navbar {
+    border-radius: 0;
+    margin-bottom: 0;
+}
+.main-container {
+    margin-right: 0;
+    position: relative;
+    overflow: hidden;
+}
+.main-container .col-md-10 {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+/* Sidebar. */
+#sidebar {
+    margin-top: -50px;
+    padding-top: 50px;
+    background-color: #333;
+    margin-bottom: -8000px;
+    padding-bottom: 8000px;
+}
+#sidebar span.nav-header {
+    display: block;
+    text-align: center;
+    padding: 1em 0;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #EEE;
+    text-transform: uppercase;
+    border-top: solid 1px #444;
+    border-bottom: solid 1px #444;
+}
+#sidebar li a {
+    color: #999;
+    font-size: 1em;
+    white-space: nowrap;
+}
+#sidebar li a:visited {
+    color: #999;
+}
+#sidebar li a:hover {
+    color: #fff;
+    background-color: #1ABB9C;
+}
+#sidebar li a i {
+    margin-right: 5px;
+}
+#sidebar li.active {
+    background: #444;
+}
+#sidebar li.active a {
+    color: #FFF;
+    background: #444;
+}
+#sidebar li.active a:hover {
+    background: #555;
+}
+
+.form-actions {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-bottom: 3px solid #ddd;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.actions-menu {
+    float: right;
+}
+.page-header {
+    margin: 0 -15px 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.page-header h1 {
+    margin-left: 10px;
+    font-size: 24px;
+}
+.page-header small {
+    color: #999;
+    font-size: 16px;
+}
+
+.form-filter {
+    background-color: #f1f1f1;
+    padding: 15px;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-bottom: 20px;
+}
+.form-filter .form-group {
+    margin-right: 10px;
+}
+#topbar {
+    background-color: #F5F5F5;
+    margin-left: -15px;
+    margin-top: 0;
+    padding: 8px 0;
+}
+#topbar ol {
+    margin: 0;
+    padding: 0 0 0 15px;
+}
+#topbar li {
+    display: inline;
+}
+.navbar-inverse .navbar-nav > .open > a {
+    background-color: #333;
+}
+
+/* Forms. */
+.file-overlay {
+    width: 200px;
+    position: absolute;
+}
+
+input[type="file"] {
+    -moz-opacity: 0;
+    -khtml-opacity: 0;
+    -webkit-opacity: 0;
+    opacity: 0;
+    cursor: pointer;
+    width: 200px;
+    z-index: 100;
+}
+
+.form-control {
+    border-radius: 3px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-color: #EFEDE6;
+}
+.form-control:hover {
+    border-color: #DCD8CD;
+}
+.form-control:focus {
+    border-color: #37A37E;
+    color: #02805D;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.input-group-addon {
+    border-radius: 3px;
+    border-color: #EFEDE6;
+    background: #FAFAFA;
+}
+.help-block {
+    margin-bottom: 0;
+}
+.control-choice-input {
+    position: relative;
+    height: 20px;
+}
+.control-choice-input input {
+    float: none;
+    position: absolute;
+    left: 0;
+    top: 4px;
+}
+.control-choice-input .control-label {
+    float: none;
+    position: absolute;
+    left: 25px;
+    top: 0;
+}
+
+.delete-action-form {
+    display: inline;
+}
+
+.widgets a i {
+    margin: 0;
+}
+
+#flashes .alert {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.thumbnail {
+    width: 90px;
+}
+
+.sylius-assortment-variant-images-image {
+    margin: 5px 0;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #eee;
+}
+
+.sylius-assortment-variant-images-image:last-child {
+    border: 0;
+}
+
+.sylius-assortment-variant-images-image .thumbnail {
+    height: 60px;
+    display: block;
+    border: 0;
+}
+
+/* Hide button text on small devices, as well remove some other margin/padding */
+@media (max-width: 992px) {
+    .btn i {
+        margin-right: 0;
+    }
+    .btn span {
+        display: none;
+    }
+    .table .btn {
+        margin-bottom: 3px;
+    }
+    .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .main-container .col-md-10 {
+        padding-left: 15px;
+    }
+}
+
+/** Dashboard */
+.col-md-6 #users .btn span {
+    display: none;
+}
+
+/** Products. **/
+.sylius-products-table td {
+    vertical-align: middle;
+}
+.sylius-products-table .name {
+    font-size: 16px;
+    text-decoration: none;
+}
+.sylius-products-table .sku {
+    background: #FCFCFC;
+    color: #666;
+}
+.sylius-products-table .id,
+.sylius-products-table .stock,
+.sylius-products-table .retail-price,
+.sylius-products-table .updated-at {
+    text-align: center;
+}
+.sylius-products-table .stock,
+.sylius-products-table .retail-price,
+.sylius-products-table .updated-at {
+    width: 150px;
+}
+.sylius-products-table .actions {
+    width: 170px;
+    text-align: center;
+}
+
+/** Order. **/
+.sylius-order-content-table .picture,
+.sylius-order-content-table .quantity,
+.sylius-order-content-table .unit-price,
+.sylius-order-content-table .total {
+    width: 110px;
+    vertical-align: middle;
+}
+.sylius-order-content-table .info .name {
+    font-size: 16px;
+    text-decoration: none;
+    margin: 0 0 5px 0;
+}
+.sylius-order-content-table .info ul {
+    margin-bottom: 0;
+}
+.sylius-order-content-table .info .sku code {
+    background: #FCFCFC;
+    color: #666;
+}
+.sylius-order-content-table tr.taxes td,
+.sylius-order-content-table tr.shipping-charges td,
+.sylius-order-content-table tr.promotion-discount td {
+    vertical-align: middle;
+}
+.sylius-order-content-table tr.taxes td h5,
+.sylius-order-content-table tr.shipping-charges td h5,
+.sylius-order-content-table tr.promotion-discount td h5 {
+    margin-top: 0;
+}
+.sylius-order-content-table tr.taxes td p,
+.sylius-order-content-table tr.taxes td ul,
+.sylius-order-content-table tr.shipping-charges td p,
+.sylius-order-content-table tr.shipping-charges td ul,
+.sylius-order-content-table tr.promotion-discount td p,
+.sylius-order-content-table tr.promotion-discount td ul {
+    margin-bottom: 0;
+}
+.sylius-order-content-table span.amount {
+    min-width: 65px;
+    display: inline-block;
+}
+@charset 'UTF-8';
+/*
+ * blueimp Gallery CSS 2.11.0
+ * blueimp Gallery Indicator CSS 1.1.0
+ * https://github.com/blueimp/Gallery
+ *
+ * Copyright 2013, Sebastian Tschan
+ * https://blueimp.net
+ *
+ * Licensed under the MIT license:
+ * http://www.opensource.org/licenses/MIT
+ */
+
+.blueimp-gallery,
+.blueimp-gallery > .slides > .slide > .slide-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /* Prevent artifacts in Mozilla Firefox: */
+    -moz-backface-visibility: hidden;
+}
+.blueimp-gallery > .slides > .slide > .slide-content {
+    margin: auto;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    opacity: 1;
+}
+.blueimp-gallery {
+    position: fixed;
+    z-index: 999999;
+    overflow: hidden;
+    background: #000;
+    background: rgba(0, 0, 0, 0.9);
+    opacity: 0;
+    display: none;
+    direction: ltr;
+    -ms-touch-action: none;
+}
+.blueimp-gallery-carousel {
+    position: relative;
+    z-index: auto;
+    margin: 1em auto;
+    /* Set the carousel width/height ratio to 16/9: */
+    padding-bottom: 56.25%;
+    box-shadow: 0 0 10px #000;
+}
+.blueimp-gallery-display {
+    display: block;
+    opacity: 1;
+}
+.blueimp-gallery > .slides {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+.blueimp-gallery-carousel > .slides {
+    position: absolute;
+}
+.blueimp-gallery > .slides > .slide {
+    position: relative;
+    float: left;
+    height: 100%;
+    text-align: center;
+    -webkit-transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    -moz-transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    -ms-transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    -o-transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+.blueimp-gallery,
+.blueimp-gallery > .slides > .slide > .slide-content {
+    -webkit-transition: opacity 0.5s linear;
+    -moz-transition: opacity 0.5s linear;
+    -ms-transition: opacity 0.5s linear;
+    -o-transition: opacity 0.5s linear;
+    transition: opacity 0.5s linear;
+}
+.blueimp-gallery > .slides > .slide-loading {
+    background: url(../../../Resources/assets/img/loading.gif) center no-repeat;
+    background-size: 64px 64px;
+}
+.blueimp-gallery > .slides > .slide-loading > .slide-content {
+    opacity: 0;
+}
+.blueimp-gallery > .slides > .slide-error {
+    background: url(../../../Resources/assets/img/error.png) center no-repeat;
+}
+.blueimp-gallery > .slides > .slide-error > .slide-content {
+    display: none;
+}
+.blueimp-gallery > .prev,
+.blueimp-gallery > .next {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    width: 40px;
+    height: 40px;
+    margin-top: -23px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 60px;
+    font-weight: 100;
+    line-height: 30px;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 0 2px #000;
+    text-align: center;
+    background: #222;
+    background: rgba(0, 0, 0, 0.5);
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    border: 3px solid #fff;
+    -webkit-border-radius: 23px;
+    -moz-border-radius: 23px;
+    border-radius: 23px;
+    opacity: 0.5;
+    cursor: pointer;
+    display: none;
+}
+.blueimp-gallery > .next {
+    left: auto;
+    right: 15px;
+}
+.blueimp-gallery > .close,
+.blueimp-gallery > .title {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    margin: 0 40px 0 0;
+    font-size: 20px;
+    line-height: 30px;
+    color: #fff;
+    text-shadow: 0 0 2px #000;
+    opacity: 0.8;
+    display: none;
+}
+.blueimp-gallery > .close {
+    padding: 15px;
+    right: 15px;
+    left: auto;
+    margin: -15px;
+    font-size: 30px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.blueimp-gallery > .play-pause {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    width: 15px;
+    height: 15px;
+    background: url(../../../Resources/assets/img/play-pause.png) 0 0 no-repeat;
+    cursor: pointer;
+    opacity: 0.5;
+    display: none;
+}
+.blueimp-gallery-playing > .play-pause {
+    background-position: -15px 0;
+}
+.blueimp-gallery > .prev:hover,
+.blueimp-gallery > .next:hover,
+.blueimp-gallery > .close:hover,
+.blueimp-gallery > .title:hover,
+.blueimp-gallery > .play-pause:hover {
+    color: #fff;
+    opacity: 1;
+}
+.blueimp-gallery-controls > .prev,
+.blueimp-gallery-controls > .next,
+.blueimp-gallery-controls > .close,
+.blueimp-gallery-controls > .title,
+.blueimp-gallery-controls > .play-pause {
+    display: block;
+    /* Fix z-index issues (controls behind slide element) on Android: */
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+}
+.blueimp-gallery-single > .prev,
+.blueimp-gallery-left > .prev,
+.blueimp-gallery-single > .next,
+.blueimp-gallery-right > .next,
+.blueimp-gallery-single > .play-pause {
+    display: none;
+}
+.blueimp-gallery > .slides > .slide > .slide-content,
+.blueimp-gallery > .prev,
+.blueimp-gallery > .next,
+.blueimp-gallery > .close,
+.blueimp-gallery > .play-pause {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.blueimp-gallery > .indicator {
+    position: absolute;
+    top: auto;
+    right: 15px;
+    bottom: 15px;
+    left: 15px;
+    margin: 0 40px;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    line-height: 10px;
+    display: none;
+}
+.blueimp-gallery > .indicator > li {
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    margin: 6px 3px 0 3px;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    border: 1px solid transparent;
+    background: #ccc;
+    background: rgba(255, 255, 255, 0.25) center no-repeat;
+    border-radius: 5px;
+    box-shadow: 0 0 2px #000;
+    opacity: 0.5;
+    cursor: pointer;
+}
+.blueimp-gallery > .indicator > li:hover,
+.blueimp-gallery > .indicator > .active {
+    background-color: #fff;
+    border-color: #fff;
+    opacity: 1;
+}
+.blueimp-gallery-controls > .indicator {
+    display: block;
+    /* Fix z-index issues (controls behind slide element) on Android: */
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+}
+.blueimp-gallery-single > .indicator {
+    display: none;
+}
+.blueimp-gallery > .indicator {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Replace PNGs with SVGs for capable browsers (excluding IE<9) */
+body:last-child .blueimp-gallery > .slides > .slide-error {
+    background-image: url(../../../Resources/assets/img/error.svg);
+}
+body:last-child .blueimp-gallery > .play-pause {
+    width: 20px;
+    height: 20px;
+    background-size: 40px 20px;
+    background-image: url(../../../Resources/assets/img/play-pause.svg);
+}
+body:last-child .blueimp-gallery-playing > .play-pause {
+    background-position: -20px 0;
+}
+
+/* IE7 fixes */
+*+html .blueimp-gallery > .slides > .slide {
+    min-height: 300px;
+}
+*+html .blueimp-gallery > .slides > .slide > .slide-content {
+    position: relative;
+}
+
+*+html .blueimp-gallery > .indicator > li {
+    display: inline;
+}
